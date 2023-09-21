@@ -312,7 +312,8 @@
                           FROM TABLO_ADI<br />
 
                           ORDER BY KOLON_ADI ASC , KOLON_ADI DESC<br />
-                    
+                          <br />
+                          <br />
                     </p>
                   </div>
                 </div>
@@ -320,7 +321,97 @@
             </div>
           </div>
 
+          <div class="row">
+            <div class="col-md-6 wow animated fadeInLeft">
+              <div class="recent-works">
+                <div id="works">
+                  <div class="work-item">
+                    <p>
+                      What is the Aggregate functions? <br />
+                      <br />
+                      I will write very soon about this topic.
+                    </p>
+                  </div>
+                  <!--<div class="work-item">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. <br /><br />
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      don't look even slightly believable.
+                    </p>
+                  </div>
+                  <div class="work-item">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. <br /><br />
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      don't look even slightly believable.
+                    </p>
+                  </div> -->
+                </div>
+              </div>
+            </div>
 
+            <div class="col-md-6 wow animated fadeInRight">
+              <div class="recent-works">
+                <div id="works">
+                  <div class="work-item">
+                    <p>
+                      Toplama Komutları nedir? <br />
+                      <br />
+                      • SUM, COUNT, MIN, MAX, AVG fonksiyonları ile yapılan sql sorgularıdır. <br />
+                      
+                    
+                        o SELECT<br />
+                          SUM(PRICE),COUNT(ID),MIN(PRICE),MAX(PRICE),AVG(PRICE)<br />
+                      	  FROM TABLO_ADI<br />
+
+                      •  Bir aggregate fonksiyonu kullanıyorsak diğer aranan değeri , group by fonksiyonu ile kullanıp yazmalıyız. <br />
+
+                        o SELECT BRANCH,<br />
+
+                        SUM(LINENET) AS TOPLAMSATIS,<br />
+
+                        COUNT(*) AS SATIRSAYISI,<br />
+
+                        MIN(LINENET) ENDUSUKFIYAT,<br />
+
+                        MAX(LINENET) ENYUKSEKFIYAT,<br />
+
+                        AVG(LINENET) ORTALAMAFIYAT<br />
+
+                        FROM SALES<br />
+
+                        WHERE BRANCH = ‘izmir’<br />
+
+                        GROUP BY BRANCH<br />
+
+                      • ÖRNEGIN TOPLAM SATISI 50.000 DEN BUYUK OLAN MAGAZALAR <br />
+
+                        o  SELECT BRANCH , SUM(LINENET) AS TOPLAMSATIS<br />
+
+                        FROM SALES<br />
+
+                        GROUP BY BRANCH<br />
+
+		                    HAVING SUM(LINENET) > 50000<br />
+
+                        (NOT : Bir fonksiyonu where şartı gibi kullanmak istiyorsak having yapısıyla kullanmalıyız.)<br />
+
+                          <br />
+                          <br />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
       </section>
